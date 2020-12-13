@@ -1,4 +1,8 @@
 /* Main parent grid on the website */
+.body{
+    background: blue;
+}
+
 .container{
     
 }
