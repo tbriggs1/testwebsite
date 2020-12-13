@@ -1,0 +1,54 @@
+/* Main parent grid on the website */
+.container{
+    
+}
+
+/* Main parent grid of the navigation bar */
+.navigationBar{
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+/* Main page title */
+.main-title{
+    grid-column-start: 2;
+    grid-column-end: 6;
+    justify-self: center;
+    padding-left: 2%;
+}
+
+.navButtons{
+    grid-column-start: 9;
+    grid-column-end: 13;
+    justify-self: end;
+    width: 100%;
+}
+
+.navAnchor{
+    display: inline-block;
+    padding-right: 2%;
+}
+
+/* Parent grid of the image overlay */
+.imageCowGrid {
+    display: grid;
+    width: 100%;
+    grid-template: repeat(1, 1fr) / repeat(12, 1fr);
+}
+
+/* Cow image */
+.cowImg {
+    grid-area: 1 / 2 / 2 / 12;
+    width: 100%;
+}
+
+/* Text over the image */
+.textToOverlay {
+    grid-area: 1 / 4 / 2 / 6;
+    z-index: 5;
+    align-self: center;
+    color: white;
+    justify-items: start;
+}
+
