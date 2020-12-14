@@ -31,10 +31,10 @@ p {
 }
 
 .navButtons{
-    grid-column-start: 8;
+    grid-column-start: 9;
     grid-column-end: 13;
-    justify-self: end;
-    width: 100%;
+    align-self: end;
+    width: 120%;
 }
 
 .navAnchor{
