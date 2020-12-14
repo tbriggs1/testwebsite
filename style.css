@@ -1,8 +1,19 @@
 /* Main parent grid on the website */
 .container{
-    
+    background: #f7f7f7;
 }
 
+h1 {
+    font-family: 'Playfair Display';
+    font-weight: 200;
+}
+h2 {
+    font-family: 'Playfair Display';
+    font-weight: 200;
+}
+p {
+    font-family: 'Source Sans Pro';
+}
 /* Main parent grid of the navigation bar */
 .navigationBar{
     display: grid;
@@ -12,14 +23,15 @@
 
 /* Main page title */
 .main-title{
-    grid-column-start: 2;
+    grid-column-start: 1;
     grid-column-end: 6;
     justify-self: center;
     padding-left: 2%;
+    color: #CB904F;
 }
 
 .navButtons{
-    grid-column-start: 9;
+    grid-column-start: 8;
     grid-column-end: 13;
     justify-self: end;
     width: 100%;
@@ -31,23 +43,50 @@
 }
 
 /* Parent grid of the image overlay */
-.imageCowGrid {
+.mainGrid {
     display: grid;
     width: 100%;
-    grid-template: repeat(1, 1fr) / repeat(12, 1fr);
+    grid-template: repeat(6, 1fr) / repeat(12, 1fr);
 }
 
 /* Cow image */
 .cowImg {
     grid-area: 1 / 2 / 2 / 12;
     width: 100%;
+    z-index: 1;
 }
 
 /* Text over the image */
 .textToOverlay {
-    grid-area: 1 / 4 / 2 / 6;
+    width: 80%;
+    grid-area: 1 / 3 / 2 / 6;
     z-index: 5;
     align-self: center;
     color: white;
     justify-items: start;
 } 
+/* Blue background positioning */
+.intro{
+    background: #0C2946;
+    grid-area: 2 / 1 / 4 / 13;
+    height: 35%;
+    bottom: 4%;
+    z-index: 0;
+    position: relative;
+    display: grid;
+    grid-template: repeat(6, 1fr) / repeat(6, 1fr);
+}
+
+/* Class to move the text */
+.textIntro {
+    width: 100%;
+    justify-self: center;
+    grid-area: 3 / 3 / 5 / 5;
+    text-align: center;
+    color: #ffffff; 
+}
+
+.textIntro h2 {
+    text-align: center;
+    color: #CB904F;
+}
