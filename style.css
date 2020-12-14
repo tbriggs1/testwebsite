@@ -35,10 +35,10 @@ p {
 }
 
 .navButtons{
-    grid-column-start: 9;
+    grid-column-start: 8;
     grid-column-end: 13;
     align-self: end;
-    width: 120%;
+    width: 140%;
 }
 
 .navAnchor{
@@ -100,7 +100,7 @@ p {
     grid-area: 3 / 2 / 4 / 5;
     position: relative; 
     background: white;
-    bottom: 55%;
+    bottom: 50%;
     height: 33%;
     width: 80%;
     text-align: center;
@@ -112,7 +112,7 @@ p {
     grid-area: 3 / 5 / 4 / 8;
     position: relative; 
     background: white;
-    bottom: 55%;
+    bottom: 50%;
     height: 33%;
     width: 80%;
     text-align: center;
@@ -125,7 +125,7 @@ p {
     grid-area: 3 / 9 / 4 / 12;
     position: relative; 
     background: white;
-    bottom: 55%;
+    bottom: 50%;
     height: 33%;
     width: 80%;
     text-align: center;
