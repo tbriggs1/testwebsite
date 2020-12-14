@@ -11,6 +11,10 @@ h2 {
     font-family: 'Playfair Display';
     font-weight: 200;
 }
+h3 {
+    font-family: 'Playfair Display';
+    font-weight: 200;
+}
 p {
     font-family: 'Source Sans Pro';
 }
@@ -90,3 +94,65 @@ p {
     text-align: center;
     color: #CB904F;
 }
+
+/* Style for info cards */
+.infoCard {
+    grid-area: 3 / 2 / 4 / 5;
+    position: relative; 
+    background: white;
+    bottom: 55%;
+    height: 33%;
+    width: 80%;
+    text-align: center;
+    padding: 6% 7%;
+    justify-self: start;
+}
+
+.infoCard1 {
+    grid-area: 3 / 5 / 4 / 8;
+    position: relative; 
+    background: white;
+    bottom: 55%;
+    height: 33%;
+    width: 80%;
+    text-align: center;
+    padding: 6% 7%;
+    justify-self: start;
+    left: 20%;
+}
+
+.infoCard2 {
+    grid-area: 3 / 9 / 4 / 12;
+    position: relative; 
+    background: white;
+    bottom: 55%;
+    height: 33%;
+    width: 80%;
+    text-align: center;
+    padding: 6% 7%;
+    justify-self: end;
+}
+.infoCards h3 {
+    color: #CB904F;
+}
+
+/* Class for underline */
+.underline{
+    border-bottom: 3px solid #CB904F;
+    width: 15%;
+    margin-left: 42%;
+    bottom: 4%;
+    position: relative;
+}
+
+/* Set the background of the image */
+.iconBackground {
+    padding: 4%;
+    border-radius: 50%;
+    background: #f7f7f7;
+    height: 40px;
+    width: 40px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
