@@ -113,6 +113,7 @@ p {
     width: 80%;
     text-align: center;
     padding: 6% 7%;
+    padding-bottom: 12%;
     justify-self: start;
 }
 
@@ -125,6 +126,7 @@ p {
     width: 80%;
     text-align: center;
     padding: 6% 7%;
+    padding-bottom: 12%;
     justify-self: start;
     left: 20%;
 }
@@ -138,6 +140,7 @@ p {
     width: 80%;
     text-align: center;
     padding: 6% 7%;
+    padding-bottom: 12%;
     justify-self: end;
 }
 .infoCards h3 {
@@ -164,3 +167,51 @@ p {
     margin-right: auto;
 }
 
+
+.imgTextContainer{
+    grid-area: 3 / 1 / 5 / 13;
+    grid-template: repeat(2, 1fr) / repeat(12, 1fr);
+    margin-top: 4%;
+    display: grid;
+    width: 100%;
+}
+
+.imgTextContainer button {
+    background: #CC6929;
+    color: white;
+    border: none;
+    padding: 2%;
+}
+
+.imgTextContainer h2 {
+    color: #CB904F;
+}
+
+.textImgSide {
+    grid-area:  1 / 2 / 1 / 5;
+    position: relative; 
+    justify-self: start;
+}
+
+.textButton { 
+    grid-area: 1 / 7 / 1 / 10;
+    align-self: start;
+    position: relative;
+    margin-top: 6%;
+}
+
+.textImgSide2 {
+    grid-area: 2 / 7 / 2 / 10;
+    position: relative; 
+    display: inline;
+    margin-top: 6%;
+    bottom: 40%;
+}
+
+.textButton2 { 
+    grid-area:  2 / 2 / 2 / 5;
+    align-self: start;
+    position: relative;
+    display: inline;
+    bottom: 40%;
+}
