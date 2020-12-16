@@ -274,7 +274,7 @@ p {
     grid-column-start: 2;
     grid-column-end: 3;
     color: #CB904F;
-    width: 1400%;
+    width: 140%;
     display:inline;
 }
 
@@ -296,7 +296,7 @@ p {
     color: white;
     grid-column-start: 2;
     grid-column-end: 3;
-    width: 1400%;
+    width: 140%;
 }
 
 .social {
@@ -359,13 +359,14 @@ p {
     justify-self: center;
     padding-left: 2%;
     color: #CB904F;
+    font-size: 8px;
 }
 
 .navButtons{
     grid-column-start: 4;
     grid-column-end: 7;
     align-self: end;
-    width: 140%;
+    width: 100%;
 }
 
 .navAnchor{
@@ -602,7 +603,7 @@ p {
     grid-column-start: 2;
     grid-column-end: 3;
     color: #CB904F;
-    width: 1400%;
+    width: 100%;
     display:inline;
 }
 
@@ -610,7 +611,7 @@ p {
     grid-column-start: 4;
     grid-column-end: 7;
     align-self: end;
-    width: 140%;
+    width: 100%;
     color: white;
 }
 
@@ -624,7 +625,7 @@ p {
     color: white;
     grid-column-start: 2;
     grid-column-end: 3;
-    width: 1400%;
+    width: 140%;
 }
 
 .social {
@@ -948,7 +949,7 @@ p {
     grid-column-start: 4;
     grid-column-end: 7;
     align-self: end;
-    width: 140%;
+    width: 100%;
     color: white;
 }
 
@@ -976,8 +977,4 @@ p {
     grid-column-end: 7;
     color: white;
 }
-
-.social img {
-}
-
 }
