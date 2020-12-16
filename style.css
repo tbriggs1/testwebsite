@@ -58,7 +58,7 @@ p {
 .mainGrid {
     display: grid;
     width: 100%;
-    grid-template: repeat(6, 1fr) / repeat(12, 1fr);
+    grid-template: repeat(4, 1fr) / repeat(12, 1fr);
 }
 
 /* Cow image */
@@ -167,7 +167,7 @@ p {
     margin-right: auto;
 }
 
-
+/* Sets the container for the img/opposite text layout */
 .imgTextContainer{
     grid-area: 3 / 1 / 5 / 13;
     grid-template: repeat(2, 1fr) / repeat(12, 1fr);
@@ -188,20 +188,20 @@ p {
 }
 
 .textImgSide {
-    grid-area:  1 / 2 / 1 / 5;
+    grid-area:  1 / 3 / 1 / 6;
     position: relative; 
     justify-self: start;
 }
 
 .textButton { 
-    grid-area: 1 / 7 / 1 / 10;
+    grid-area: 1 / 7 / 1 / 11;
     align-self: start;
     position: relative;
     margin-top: 6%;
 }
 
 .textImgSide2 {
-    grid-area: 2 / 7 / 2 / 10;
+    grid-area: 2 / 7 / 2 / 11;
     position: relative; 
     display: inline;
     margin-top: 6%;
@@ -209,9 +209,105 @@ p {
 }
 
 .textButton2 { 
-    grid-area:  2 / 2 / 2 / 5;
+    grid-area:  2 / 3 / 2 / 6;
     align-self: start;
     position: relative;
     display: inline;
     bottom: 40%;
+}
+
+/* Sets white background img layout */
+.imgTextContainer1 {
+    grid-area: 4 / 3 / 5 / 13;
+    grid-template: repeat(1, 1fr) / repeat(12, 1fr);
+    margin-top: 10%;
+    display: grid;
+    width: 80%;
+    background: white;
+    align-items: center;
+    height: 70%;
+}
+
+.textImgSide3 {
+    grid-area: 2 / 8 / 1 / 12;
+    position: relative; 
+    display: inline;
+    margin-top: 6%;
+   
+}
+
+.textButton3 { 
+    grid-area:  2 / 4 / 1 / 7;
+    position: relative;
+    display: inline;
+    
+}
+
+.textButton3 h4 {
+    display: inline;
+    color: #CB904F;
+    font-weight: 400;
+}
+.imgTextContainer1 h1 {
+    color: #CB904F;
+}
+
+.customerSat{
+    margin-left: 4%;
+    font-weight: 1;
+    display: inline;
+    color: grey !important;
+}
+
+/* Main parent grid of the navigation bar */
+.footerBar{
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    background: #0C2946;
+}
+
+/* Main page title */
+.footer-title{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    color: #CB904F;
+    width: 1400%;
+    display:inline;
+}
+
+.footerButtons{
+    grid-column-start: 10;
+    grid-column-end: 13;
+    align-self: end;
+    width: 140%;
+    color: white;
+}
+
+.footerAnchor{
+    display: inline-block;
+    padding-right: 5%;
+    color: white;
+}
+
+.lodgeRights {
+    color: white;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    width: 1400%;
+}
+
+.social {
+    color: white;
+    grid-column-start: 10;
+    grid-column-end: 13;
+}
+
+.socialText {
+    grid-column-start: 10;
+    grid-column-end: 13;
+    color: white;
+}
+
+.social img {
 }
