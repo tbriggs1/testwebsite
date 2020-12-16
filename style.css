@@ -1,7 +1,8 @@
 @media only screen and (max-width:1000px){
     /* Hidden content */
     .textToOverlay {
-        visibility: hidden;
+        visibility: hidden !important;
+        width: 0%;
     }
     
     /* Parent grid of the image overlay */
@@ -90,28 +91,26 @@
     .dropdown:hover .dropbtn {background-color: #f7f7f7;}
 
     .cowImg{
-        z-index: 7;
+        z-index: 0;
     }
 
     /* Style for info cards */
     .infoCard {
-        grid-area: 3 / 2 / 4 / 5;
+        grid-area: 2 / 1 / 2 / 2;
         position: relative; 
         background: white;
-        bottom: 50%;
         height: 33%;
-        width: 80%;
+        width: 100%;
         text-align: center;
-        padding: 6% 7%;
         padding-bottom: 12%;
         justify-self: start;
     }
 
     .infoCard1 {
-        grid-area: 3 / 5 / 4 / 8;
+        grid-area: 2 / 1 / 2 / 2;
         position: relative; 
         background: white;
-        bottom: 50%;
+        bottom: 30%;
         height: 33%;
         width: 80%;
         text-align: center;
@@ -122,10 +121,10 @@
     }
 
     .infoCard2 {
-        grid-area: 3 / 9 / 4 / 12;
+        grid-area: 2 / 1 / 4 / 2;
         position: relative; 
         background: white;
-        bottom: 50%;
+        bottom: 20%;
         height: 33%;
         width: 80%;
         text-align: center;
@@ -159,8 +158,8 @@
     /* Blue background positioning */
     .intro{
         background: #0C2946;
-        grid-area: 2 / 1 / 4 / 7;
-        height: 35%;
+        grid-area: 2 / 1 / 4 / 1;
+        height: 70%;
         bottom: 38%;
         z-index: -10;
         position: relative;
@@ -171,15 +170,110 @@
     /* Class to move the text */
     .textIntro {
         width: 100%;
-        grid-area: 2 / 2 / 2 / 3;
+        grid-area: 2 / 2 / 2 / 5;
         text-align: center;
         justify-self: center;
         color: #ffffff; 
+        font-size: 24px;
+        bottom: 10%;
     }
 
     .textIntro h2 {
         text-align: center;
         color: #CB904F;
+    }
+    /* Sets the container for the img/opposite text layout */
+    .imgTextContainer{
+        grid-area: 5 / 1 / 5 / 6;
+        grid-template: repeat(2, 1fr) / repeat(6, 1fr);
+        margin-top: 4%;
+        display: grid;
+        width: 100%;
+    }
+
+    .imgTextContainer button {
+        background: #CC6929;
+        color: white;
+        border: none;
+        padding: 2%;
+    }
+
+    .imgTextContainer h2 {
+        color: #CB904F;
+    }
+
+    .textImgSide {
+        grid-area:  5 / 1 / 5 / 3;
+        position: relative; 
+        justify-self: start;
+    }
+
+    .textButton { 
+        grid-area: 5 / 3 / 5 / 6;
+        align-self: start;
+        position: relative;
+        margin-top: 6%;
+        width: 60%;
+    }
+
+    .textImgSide2 {
+        grid-area: 5 / 3 / 5 / 6;
+        position: relative; 
+        display: inline;
+        margin-top: 6%;
+        bottom: 40%;
+    }
+
+    .textButton2 { 
+        grid-area:  5 / 1 / 5 / 3;
+        align-self: start;
+        position: relative;
+        display: inline;
+        bottom: 40%;
+        width: 60%;
+    }
+
+    /* Sets white background img layout */
+    .imgTextContainer1 {
+        grid-area: 4 / 1 / 5 / 6;
+        grid-template: repeat(1, 1fr) / repeat(6, 1fr);
+        margin-top: 10%;
+        display: grid;
+        width: 80%;
+        background: white;
+        align-items: center;
+        height: 70%;
+    }
+
+    .textImgSide3 {
+        grid-area: 5 / 4 / 5 / 6;
+        position: relative; 
+        display: inline;
+        margin-top: 6%;
+    
+    }
+
+    .textButton3 { 
+        grid-area:  5 / 2 / 5 / 3;
+        position: relative;
+        display: inline;
+        
+    }
+
+    .textButton3 h4 {
+        display: inline;
+        color: #CB904F;
+        font-weight: 400;
+    }
+    .imgTextContainer1 h1 {
+        color: #CB904F;
+    }
+
+    .customerSat{
+        margin-left: 4%;
+        font-weight: 1;
+        display: inline;
+        color: grey !important;
     }
 }
 @media only screen and (min-width: 1650px){
