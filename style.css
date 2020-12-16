@@ -198,6 +198,7 @@ p {
     align-self: start;
     position: relative;
     margin-top: 6%;
+    width: 60%;
 }
 
 .textImgSide2 {
@@ -209,11 +210,12 @@ p {
 }
 
 .textButton2 { 
-    grid-area:  2 / 3 / 2 / 6;
+    grid-area:  2 / 3 / 2 / 7;
     align-self: start;
     position: relative;
     display: inline;
     bottom: 40%;
+    width: 60%;
 }
 
 /* Sets white background img layout */
@@ -310,4 +312,672 @@ p {
 }
 
 .social img {
+}
+
+/* Change back to 900 when mobile comes in */
+@media (min-width: 900px) and (max-width : 1650px){
+    /* Main parent grid on the website */
+body{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
+}
+
+.container{
+    background: #f7f7f7;
+}
+
+h1 {
+    font-family: 'Playfair Display';
+    font-weight: 200;
+}
+h2 {
+    font-family: 'Playfair Display';
+    font-weight: 200;
+}
+h3 {
+    font-family: 'Playfair Display';
+    font-weight: 200;
+}
+p {
+    font-family: 'Source Sans Pro';
+}
+/* Main parent grid of the navigation bar */
+.navigationBar{
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    font-size: 14px;
+}
+
+/* Main page title */
+.main-title{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    justify-self: center;
+    padding-left: 2%;
+    color: #CB904F;
+}
+
+.navButtons{
+    grid-column-start: 4;
+    grid-column-end: 7;
+    align-self: end;
+    width: 140%;
+}
+
+.navAnchor{
+    display: inline-block;
+    padding-right: 2%;
+}
+
+/* Parent grid of the image overlay */
+.mainGrid {
+    display: grid;
+    width: 100%;
+    grid-template: repeat(4, 1fr) / repeat(12, 1fr);
+    font-size: 14px;
+}
+
+/* Cow image */
+.cowImg {
+    grid-area: 1 / 2 / 2 / 12;
+    width: 100%;
+    z-index: 1;
+}
+
+/* Text over the image */
+.textToOverlay {
+    width: 80%;
+    grid-area: 1 / 3 / 2 / 6;
+    z-index: 5;
+    align-self: center;
+    color: white;
+    justify-items: start;
+} 
+/* Blue background positioning */
+.intro{
+    background: #0C2946;
+    grid-area: 2 / 1 / 4 / 13;
+    height: 35%;
+    bottom: 4%;
+    z-index: 0;
+    position: relative;
+    display: grid;
+    grid-template: repeat(6, 1fr) / repeat(6, 1fr);
+}
+
+/* Class to move the text */
+.textIntro {
+    width: 100%;
+    justify-self: center;
+    grid-area: 3 / 3 / 5 / 5;
+    text-align: center;
+    color: #ffffff; 
+    font-size: 14px;
+}
+
+.textIntro h2 {
+    text-align: center;
+    color: #CB904F;
+}
+
+/* Style for info cards */
+.infoCard {
+    grid-area: 3 / 2 / 4 / 5;
+    position: relative; 
+    background: white;
+    bottom: 45%;
+    height: 33%;
+    width: 80%;
+    text-align: center;
+    padding-bottom: 30%;
+    padding-top: 10%;
+    justify-self: start;
+}
+
+.infoCard1 {
+    grid-area: 3 / 5 / 4 / 8;
+    position: relative; 
+    background: white;
+    bottom: 45%;
+    height: 33%;
+    width: 80%;
+    text-align: center;
+    padding-bottom: 30%;
+    padding-top: 10%;
+    justify-self: start;
+    left: 20%;
+}
+
+.infoCard2 {
+    grid-area: 3 / 9 / 4 / 12;
+    position: relative; 
+    background: white;
+    bottom: 45%;
+    height: 33%;
+    width: 80%;
+    text-align: center;
+    padding-bottom: 30%;
+    padding-top: 10%;
+    justify-self: end;
+}
+.infoCards h3 {
+    color: #CB904F;
+}
+
+/* Class for underline */
+.underline{
+    border-bottom: 3px solid #CB904F;
+    width: 15%;
+    margin-left: 42%;
+    bottom: 4%;
+    position: relative;
+}
+
+/* Set the background of the image */
+.iconBackground {
+    padding: 4%;
+    border-radius: 50%;
+    background: #f7f7f7;
+    height: 40px;
+    width: 40px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Sets the container for the img/opposite text layout */
+.imgTextContainer{
+    grid-area: 3 / 1 / 5 / 13;
+    grid-template: repeat(3, 1fr) / repeat(6, 1fr);
+    margin-top: 10%;
+    display: grid;
+    width: 100%;
+}
+
+.imgTextContainer button {
+    background: #CC6929;
+    color: white;
+    border: none;
+    padding: 2%;
+}
+
+.imgTextContainer h2 {
+    color: #CB904F;
+}
+
+.imgTextContainer img {
+    width: 400px;
+}
+
+.textImgSide {
+    grid-area:  1 / 2 / 1 / 3;
+    position: relative; 
+    justify-self: start;
+}
+
+.textButton { 
+    grid-area: 1 / 3 / 1 / 7;
+    justify-self: center;
+    position: relative;
+    margin-top: 2%;
+    width: 60%;
+}
+
+.textImgSide2 {
+    grid-area: 3 / 3 / 3 / 7;
+    position: relative; 
+    display: inline;
+    bottom: 75%;
+}
+
+.textButton2 { 
+    grid-area:  3 / 2 / 3 / 3;
+    align-self: start;
+    position: relative;
+    display: inline;
+    bottom: 75%;
+    width: 60%;
+}
+
+/* Sets white background img layout */
+.imgTextContainer1 {
+    grid-area: 5 / 3 / 5 / 13;
+    grid-template: repeat(1, 1fr) / repeat(12, 1fr);
+    display: grid;
+    width: 80%;
+    background: white;
+    align-items: center;
+    height: 80%;
+    margin-bottom: 10%;
+    position: relative;
+    bottom: 55%;
+}
+.imgTextContainer1 img {
+    height: 250px;
+}
+
+.textImgSide3 {
+    grid-area: 2 / 8 / 1 / 12;
+    position: relative; 
+    display: inline;
+}
+
+.textButton3 { 
+    grid-area:  2 / 4 / 1 / 7;
+    position: relative;
+    display: inline;
+    
+}
+
+.textButton3 h4 {
+    display: inline;
+    color: #CB904F;
+    font-weight: 400;
+}
+.imgTextContainer1 h1 {
+    color: #CB904F;
+}
+
+.customerSat{
+    margin-left: 4%;
+    font-weight: 1;
+    display: inline;
+    color: grey !important;
+}
+
+/* Main parent grid of the navigation bar */
+.footerBar{
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    background: #0C2946;
+    font-size: 14px;
+}
+
+/* Main page title */
+.footer-title{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    color: #CB904F;
+    width: 1400%;
+    display:inline;
+}
+
+.footerButtons{
+    grid-column-start: 4;
+    grid-column-end: 7;
+    align-self: end;
+    width: 140%;
+    color: white;
+}
+
+.footerAnchor{
+    display: inline-block;
+    padding-right: 5%;
+    color: white;
+}
+
+.lodgeRights {
+    color: white;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    width: 1400%;
+}
+
+.social {
+    color: white;
+    grid-column-start: 4;
+    grid-column-end: 7;
+}
+
+.socialText {
+    grid-column-start: 4;
+    grid-column-end: 7;
+    color: white;
+}
+
+.social img {
+}
+
+}
+
+/* Change back to 900 when mobile comes in */
+@media (min-width: 50px) and (max-width : 900px){
+    /* Main parent grid on the website */
+body{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
+}
+
+.container{
+    background: #f7f7f7;
+}
+
+h1 {
+    font-family: 'Playfair Display';
+    font-weight: 200;
+}
+h2 {
+    font-family: 'Playfair Display';
+    font-weight: 200;
+}
+h3 {
+    font-family: 'Playfair Display';
+    font-weight: 200;
+}
+p {
+    font-family: 'Source Sans Pro';
+}
+/* Main parent grid of the navigation bar */
+.navigationBar{
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    font-size: 8px;
+}
+
+/* Main page title */
+.main-title{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    justify-self: center;
+    padding-left: 2%;
+    color: #CB904F;
+}
+
+.navButtons{
+    grid-column-start: 4;
+    grid-column-end: 7;
+    align-self: end;
+    width: 140%;
+}
+
+.navAnchor{
+    display: inline-block;
+    padding-right: 2%;
+}
+
+/* Parent grid of the image overlay */
+.mainGrid {
+    display: grid;
+    width: 100%;
+    grid-template: repeat(4, 1fr) / repeat(12, 1fr);
+    font-size: 10px;
+}
+
+/* Cow image */
+.cowImg {
+    grid-area: 1 / 2 / 2 / 12;
+    width: 100%;
+    z-index: 1;
+}
+
+/* Text over the image */
+.textToOverlay {
+    width: 90%;
+    grid-area: 1 / 3 / 1 / 6;
+    z-index: 5;
+    margin-top: 8%;
+    align-self: start;
+    color: white;
+    justify-items: start;
+} 
+/* Blue background positioning */
+.intro{
+    background: #0C2946;
+    grid-area: 2 / 1 / 4 / 13;
+    height: 30%;
+    padding-bottom: 5%;
+    bottom: 16%;
+    z-index: 0;
+    position: relative;
+    display: grid;
+    grid-template: repeat(6, 1fr) / repeat(6, 1fr);
+}
+
+/* Class to move the text */
+.textIntro {
+    width: 100%;
+    justify-self: center;
+    grid-area: 1 / 3 / 4 / 5;
+    text-align: center;
+    color: #ffffff; 
+    font-size: 14px;
+}
+
+.textIntro h2 {
+    text-align: center;
+    color: #CB904F;
+}
+
+/* Style for info cards */
+.infoCard {
+    grid-area: 3 / 2 / 4 / 5;
+    position: relative; 
+    background: white;
+    bottom: 80%;
+    height: 33%;
+    width: 80%;
+    text-align: center;
+    padding-bottom: 30%;
+    padding-top: 10%;
+    justify-self: start;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.infoCard1 {
+    grid-area: 3 / 5 / 4 / 8;
+    position: relative; 
+    background: white;
+    bottom: 80%;
+    height: 33%;
+    width: 80%;
+    text-align: center;
+    padding-bottom: 30%;
+    padding-top: 10%;
+    justify-self: start;
+    left: 20%;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.infoCard2 {
+    grid-area: 3 / 9 / 4 / 12;
+    position: relative; 
+    background: white;
+    bottom: 80%;
+    height: 33%;
+    width: 80%;
+    text-align: center;
+    padding-bottom: 30%;
+    padding-top: 10%;
+    justify-self: end;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+.infoCards h3 {
+    color: #CB904F;
+}
+
+/* Class for underline */
+.underline{
+    border-bottom: 3px solid #CB904F;
+    width: 15%;
+    margin-left: 42%;
+    bottom: 4%;
+    position: relative;
+}
+
+/* Set the background of the image */
+.iconBackground {
+    padding: 4%;
+    border-radius: 50%;
+    background: #f7f7f7;
+    height: 40px;
+    width: 40px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Sets the container for the img/opposite text layout */
+.imgTextContainer{
+    grid-area: 3 / 1 / 5 / 13;
+    grid-template: repeat(3, 1fr) / repeat(6, 1fr);
+    margin-top: 10%;
+    display: grid;
+    width: 100%;
+}
+
+.imgTextContainer button {
+    background: #CC6929;
+    color: white;
+    border: none;
+    padding: 2%;
+}
+
+.imgTextContainer h2 {
+    color: #CB904F;
+}
+
+.imgTextContainer img {
+    width: 400px;
+}
+
+.textImgSide {
+    grid-area:  1 / 2 / 1 / 3;
+    position: relative; 
+    justify-self: start;
+}
+
+.textButton { 
+    grid-area: 1 / 3 / 1 / 7;
+    justify-self: center;
+    position: relative;
+    margin-top: 2%;
+    width: 60%;
+}
+
+.textImgSide2 {
+    grid-area: 3 / 3 / 3 / 7;
+    position: relative; 
+    display: inline;
+    bottom: 75%;
+}
+
+.textButton2 { 
+    grid-area:  3 / 2 / 3 / 3;
+    align-self: start;
+    position: relative;
+    display: inline;
+    bottom: 75%;
+    width: 60%;
+}
+
+/* Sets white background img layout */
+.imgTextContainer1 {
+    grid-area: 5 / 3 / 5 / 13;
+    grid-template: repeat(1, 1fr) / repeat(12, 1fr);
+    display: grid;
+    width: 80%;
+    background: white;
+    align-items: center;
+    height: 80%;
+    margin-bottom: 10%;
+    position: relative;
+    bottom: 55%;
+}
+.imgTextContainer1 img {
+    height: 250px;
+}
+
+.textImgSide3 {
+    grid-area: 2 / 8 / 1 / 12;
+    position: relative; 
+    display: inline;
+}
+
+.textButton3 { 
+    grid-area:  2 / 4 / 1 / 7;
+    position: relative;
+    display: inline;
+    
+}
+
+.textButton3 h4 {
+    display: inline;
+    color: #CB904F;
+    font-weight: 400;
+}
+.imgTextContainer1 h1 {
+    color: #CB904F;
+}
+
+.customerSat{
+    margin-left: 4%;
+    font-weight: 1;
+    display: inline;
+    color: grey !important;
+}
+
+/* Main parent grid of the navigation bar */
+.footerBar{
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    background: #0C2946;
+    font-size: 14px;
+}
+
+/* Main page title */
+.footer-title{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    color: #CB904F;
+    width: 1400%;
+    display:inline;
+}
+
+.footerButtons{
+    grid-column-start: 4;
+    grid-column-end: 7;
+    align-self: end;
+    width: 140%;
+    color: white;
+}
+
+.footerAnchor{
+    display: inline-block;
+    padding-right: 5%;
+    color: white;
+}
+
+.lodgeRights {
+    color: white;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    width: 1400%;
+}
+
+.social {
+    color: white;
+    grid-column-start: 4;
+    grid-column-end: 7;
+}
+
+.socialText {
+    grid-column-start: 4;
+    grid-column-end: 7;
+    color: white;
+}
+
+.social img {
+}
+
 }
