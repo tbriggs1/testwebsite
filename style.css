@@ -15,7 +15,8 @@
     .mainGrid {
         display: grid;
         width: 100%;
-        grid-template: repeat(4, 1fr) / repeat(6, 1fr);
+        grid-template: repeat(6, 1fr) / repeat(6, 1fr);
+        background: #f7f7f7;
     }
     body{
         width: 100%;
@@ -100,28 +101,32 @@
 
     .cowImg{
         z-index: 0;
-      
+        width: 100%;
+        height: 40%;
+        grid-area: 1 / 1 / 1 / 7;
+        z-index: 20;
     }
-
+ 
     /* Style for info cards */
     .infoCard {
-        grid-area: 3 / 1 / 3 / 2;
+        grid-area: 2 / 1 / 3 / 7;
         position: relative; 
         background: white;
-        bottom: 100%;
+        bottom: 27%;
         height: 33%;
         width: 80%;
         padding-top: 7%;
         text-align: center;
         justify-self: center;
-        
+        z-index: 50;
     }
 
     .infoCard1 {
-        grid-area: 3 / 1 / 3 / 2;
+        grid-area: 2 / 1 / 3 / 7;
         position: relative; 
         background: white;
-        bottom: 55%;
+        z-index: 50;
+        top: 18%;
         height: 33%;
         width: 80%;
         text-align: center;
@@ -130,10 +135,11 @@
     }
 
     .infoCard2 {
-        grid-area: 3 / 1 / 3 / 2;
+        grid-area: 2 / 1 / 3 / 7;
         position: relative; 
         background: white;
-        bottom: 10%;
+        z-index: 50;
+        top: 63%;
         height: 33%;
         width: 80%;
         text-align: center;
@@ -166,25 +172,26 @@
     /* Blue background positioning */
     .intro{
         background: #0C2946;
-        grid-area: 2 / 1 / 4 / 1;
-        height: 110%;
-        bottom: 38%;
-        z-index: -10;
+        grid-area: 2 / 1 / 4 / 7;
+        height: 85%;
+        bottom: 30%;
+        z-index: 10;
         position: relative;
         display: grid;
+        
         grid-template: repeat(6, 1fr) / repeat(6, 1fr);
     }
 
     /* Class to move the text */
     .textIntro {
         width: 100%;
-        grid-area: 2 / 2 / 2 / 6;
+        grid-area: 1 / 2 / 2 / 6;
         text-align: center;
         justify-self: center;
         color: #ffffff; 
         font-size: 24px;  
-        margin-top: 10%;
-        margin-bottom: 5%;
+        margin-top: 7%;
+        margin-bottom: 3%;
     }
 
     .textIntro h2 {
@@ -193,11 +200,11 @@
     }
     /* Sets the container for the img/opposite text layout */
     .imgTextContainer{
-        grid-area: 5 / 1 / 5 / 6;
-        grid-template: repeat(2, 1fr) / repeat(6, 1fr);
-        margin-top: 4%;
+        grid-area: 3 / 1 / 6 / 7;
+        grid-template: repeat(6, 1fr) / repeat(6, 1fr);
         display: grid;
         width: 100%;
+       
     }
 
     .imgTextContainer button {
@@ -212,61 +219,65 @@
     }
 
     .textImgSide {
-        grid-area:  5 / 1 / 5 / 3;
+        grid-area:  2 / 1 / 2 / 7;
         position: relative; 
-        justify-self: start;
+        justify-self: center;
+        bottom: 15%;
+        width: 90%;
+        height: 20%;
     }
 
     .textButton { 
-        grid-area: 5 / 3 / 5 / 6;
+        grid-area: 3 / 1 / 3 / 7;
         align-self: start;
         position: relative;
-        margin-top: 6%;
-        width: 60%;
+        width: 90%;
+        justify-self: center;
     }
-
+    .textButton button {
+        padding: 2%;
+    }
     .textImgSide2 {
-        grid-area: 5 / 3 / 5 / 6;
+        grid-area:  4 / 1 / 4 / 7;
         position: relative; 
-        display: inline;
-        margin-top: 6%;
-        bottom: 40%;
+        justify-self: center;
+        margin-top: 8%;
+        width: 90%;
+        height: 20%;
     }
 
     .textButton2 { 
-        grid-area:  5 / 1 / 5 / 3;
+        grid-area: 5 / 1 / 5 / 7;
         align-self: start;
         position: relative;
-        display: inline;
-        bottom: 40%;
-        width: 60%;
+        margin-top: 6%;
+        width: 90%;
+        justify-self: center;
     }
 
     /* Sets white background img layout */
     .imgTextContainer1 {
-        grid-area: 4 / 1 / 5 / 6;
+        grid-area: 6 / 1 / 6 / 7;
         grid-template: repeat(1, 1fr) / repeat(6, 1fr);
-        margin-top: 10%;
         display: grid;
-        width: 80%;
+        width: 90%;
+        justify-self: center;
         background: white;
-        align-items: center;
-        height: 70%;
+        position: relative;
+        height: 65%;
+        bottom: 30%;
+        font-size: 24px;
     }
 
     .textImgSide3 {
-        grid-area: 5 / 4 / 5 / 6;
-        position: relative; 
-        display: inline;
-        margin-top: 6%;
-    
+        visibility: hidden;
     }
 
     .textButton3 { 
-        grid-area:  5 / 2 / 5 / 3;
+        grid-area:  1 / 2 / 7 / 5;
         position: relative;
         display: inline;
-        
+        align-self: center;
     }
 
     .textButton3 h4 {
@@ -284,7 +295,42 @@
         display: inline;
         color: grey !important;
     }
+    /* Main parent grid of the navigation bar */
+    .footerBar{
+        background: #0C2946;
+        color: white;
+        text-align: center;
+        font-weight: 200;
+        font-size: 12px;
+        padding-top: 10%;
+        padding-bottom: 5%;
+        position: relative;
+    }
 
+    /* Main page title */
+    .footer-title{
+       color: #CB904F;
+    }
+
+    .footerButtons{
+        margin-top: 2%;
+    }
+
+    .footerAnchor{
+        margin-top: 2%;
+    }
+
+    .lodgeRights {
+        margin-top: 5%;
+    }
+
+    .social {
+        margin-top: 2%;
+    }
+
+    .socialText {
+        margin-top: 5%;
+    }
 
 }
 @media only screen and (min-width: 1650px){
