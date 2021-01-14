@@ -18,7 +18,7 @@
         display: grid;
         width: 100%;
         grid-template: repeat(6, 1fr) / repeat(6, 1fr);
-        background: #f7f7f7;
+        background: pink;
     }
     body{
         width: 100%;
@@ -364,7 +364,7 @@
     }
 
     .container{
-        background: #f7f7f7;
+        background: pink;
     }
 
     h1 {
