@@ -1,0 +1,16 @@
+#burgerIcon {
+    display: inline-block;
+    cursor: pointer;
+}
+
+.firstBurger, .secondBurger, .thirdBurger{
+    width: 35px;
+    height: 5px;
+    background: #333;
+    margin: 6px 0;
+    transition: 0.4;
+}
+
+#navMenu{
+    visibility: hidden;
+}
