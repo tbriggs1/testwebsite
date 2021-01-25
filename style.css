@@ -1,5 +1,6 @@
 body{
     font-size: 28px;
+    width: 100%;
 }
 
 #navBar{
@@ -86,3 +87,6 @@ transition: 0.4;
     z-index: -1;
 }
 
+#cowImg{
+    display: 100%;
+}
