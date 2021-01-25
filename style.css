@@ -1,3 +1,7 @@
+body{
+    font-size: 28px;
+}
+
 #navBar{
     display: grid;
     grid-template: repeat(6,1fr)/repeat(6,1fr);
@@ -6,13 +10,12 @@
 #title{
     display: inline;
     grid-area: 1 / 2 / 1 / 5;
-    font-size: 16px;
 }
 
 #navItems{
     grid-area: 1/6/1/7;
     display:inline;
-    margin-top: 10px;
+    margin-top: 45px;
 }
 
 #burgerIcon {
@@ -20,10 +23,7 @@
     cursor: pointer;
 }
 
-.burgerClose{
-    display:inline-block;
-    cursor: pointer;
-}
+
 
 #firstBurger, #secondBurger, #thirdBurger{
     width: 35px;
@@ -36,17 +36,19 @@
 #navMenu{
     visibility: hidden;
     background: burlywood;
+    max-width: 50%;
 }
 #home, #products ,#prices ,#delivery, #aboutUs{
     display:block;
     text-decoration: none;
     color:black;
+    margin-bottom: 2px;
 }
 
 /* Rotate first bar */
 .changeB1 {
     -webkit-transform: rotate(-45deg) translate(-9px, 6px) ;
-    transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-8px, 8px);
     width: 35px;
     height: 5px;
     background: #333;
@@ -69,3 +71,10 @@
     margin: 6px 0;
     transition: 0.4;
   }
+
+
+#main{
+    display:grid;
+    grid-template: repeat(6,1fr) / repeat(6,1fr);
+}
+
