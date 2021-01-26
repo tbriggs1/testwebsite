@@ -1,6 +1,7 @@
 body{
-    font-size: 28px;  
+    font-size: 26px;  
     margin: 0;
+    font-weight: lighter;
 }
 
 #navBar{
@@ -12,13 +13,25 @@ body{
     display: inline;
     grid-area: 1 / 1 / 1 / 5;
     margin-right: 170px;
+    font-size: 24px;
     justify-self: center;
+    font-family: 'Playfair Display', serif;
+    color: #CC6929;
 }
 
 #navItems{
     grid-area: 1/6/1/7;
     display:inline;
-    margin-top: 45px;
+    margin-top: 38px;
+}
+
+#introText h3 {
+    color: #CC6929;
+    font-family: 'Playfair Display', serif;
+}
+
+#introText p {
+    font-family: 'Source Sans Pro', sans-serif;
 }
 
 #burgerIcon {
@@ -29,7 +42,7 @@ body{
 #firstBurger, #secondBurger, #thirdBurger{
     width: 50px;
     height: 8px;
-    background: #333;
+    background: #4E4E4E;
     margin: 6px 0;
     transition: 0.4;
 }
@@ -117,7 +130,17 @@ opacity: 0;
     height: 100%;
 }
 
+.infoCard h3{
+    color: #CC6929;
+    font-family: 'Playfair Display', serif;
+}
+
+.infoCard p{
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
 .infoCard img{
+    color: #CC6929;
     margin-top: 2%;
 }
 
@@ -130,7 +153,7 @@ opacity: 0;
     padding: 2%;
 }
 .underLine{
-    border-bottom: 3px solid black;
+    border-bottom: 3px solid #CC6929;;
     width: 3em;
     margin-left: 45%;
     margin-right: 10%;
@@ -186,11 +209,38 @@ opacity: 0;
     margin-right: 6%;
 }
 
+#infoSection h2{
+    color: #CC6929;
+    font-family: 'Playfair Display', serif;
+}
+
+#infoSection button{
+    color: white;
+    background: #CC6929;
+    border: none;
+    shadow: none;
+    cursor: pointer;
+    padding: 2%;
+}
+
+#infoSection p{
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
 #review{
     text-align: center;
     margin-top: 120px;
     margin-left: 12%;
     margin-right: 6%;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+#review h2{
+    color: #CC6929;
+}
+
+.nameReview{
+    color: #CC6929;
 }
 
 .footerC{
@@ -200,6 +250,7 @@ opacity: 0;
     text-align: center;
     padding-bottom: 20px;
     padding-top: 10px;
+    font-family: 'Playfair Display', serif;
 }
 
 #socialIcons{
@@ -207,3 +258,6 @@ opacity: 0;
     margin-right: 5px;
 }
 
+#footerTitle{
+    color: #CC6929;
+}
