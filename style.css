@@ -238,6 +238,8 @@ opacity: 0;
     shadow: none;
     cursor: pointer;
     padding: 2%;
+    height: 70px;
+    width: 150px;
 }
 
 #infoSection p{
