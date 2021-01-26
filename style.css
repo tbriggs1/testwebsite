@@ -2,12 +2,14 @@ body{
     font-size: 26px;  
     margin: 0;
     font-weight: lighter;
+    background:#F7F7F7
 }
 
 #navBar{
     display: grid;
     grid-template: repeat(1,1fr)/repeat(6,1fr);
 }
+
 
 #title{
     display: inline;
@@ -47,12 +49,26 @@ body{
     transition: 0.4;
 }
 
+
 #navMenu{
     visibility: hidden;
-    background: burlywood;
-    max-width: 50%;
+    background: #CC6929;
+    min-width:100%;
+    margin-top:100px;
     position:absolute;
     z-index: 1;
+    background: #F7F7F7;
+   
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.navigationItems{
+    margin-left: 110px;
+    font-size: 30px;
+    font-family: 'Playfair Display', serif;
+    margin-bottom: 2px;
+    color: #CC6929 !important;
 }
 #home, #products ,#prices ,#delivery, #aboutUs{
     display:block;
