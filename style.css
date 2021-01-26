@@ -35,6 +35,7 @@ body{
 
 #introText p {
     font-family: 'Source Sans Pro', sans-serif;
+    font-size: 34px;
 }
 
 #burgerIcon {
@@ -239,7 +240,8 @@ opacity: 0;
     cursor: pointer;
     padding: 2%;
     height: 70px;
-    width: 150px;
+    width: 180px;
+    font-size: 20px;
 }
 
 #infoSection p{
