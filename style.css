@@ -1,3 +1,10 @@
+#imgText{
+    display: none;
+}
+
+.bluebgg{
+    display:none;
+}
 
 body{
     font-size: 26px;  
@@ -358,6 +365,7 @@ opacity: 0;
         font-size: 18px;
         margin-left: 70px;
         margin-top: 17%;
+        display: unset;
     }
 
     #imgText{
@@ -372,6 +380,7 @@ opacity: 0;
         position: absolute;
         width: 100%;
         background:#0C2946;
+        display: unset;
     }
     
     #introduction{
