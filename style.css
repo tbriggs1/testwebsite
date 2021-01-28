@@ -250,10 +250,15 @@ opacity: 0;
     font-size: 20px;
 }
 
+
 #infoSection p{
     font-family: 'Source Sans Pro', sans-serif;
 }
 
+
+.reviewImg{
+    display:none;
+}
 #review{
     text-align: center;
     margin-top: 120px;
@@ -311,7 +316,7 @@ opacity: 0;
         min-width: 1100px;
         margin: 0 auto;
         display:grid;
-        grid-template: repeat(6,1fr) / repeat(6,1fr);
+        grid-template: repeat(1,2900px) / repeat(6,1fr);
     }
     
     #title{
@@ -338,6 +343,7 @@ opacity: 0;
         padding-bottom: 0px;
         width: 400px;
         text-align: end;
+        margin-right: 650px;
     }
     #home, #products ,#prices ,#delivery, #aboutUs{
         display:inline;
@@ -358,7 +364,7 @@ opacity: 0;
 
     #imgText{
         color: white;
-        grid-area: 1 / 1 / 1 / 2;
+        grid-area: 1 / 1 / 1 / 5;
         z-index: 5;
         width: 50%;
         font-family: 'Source Sans Pro', 'sans-serif';
@@ -386,7 +392,7 @@ opacity: 0;
         grid-area: 1 / 1 / 1 / 7;
         background: none;
         display: grid;
-        grid-template: repeat(4,1fr) / repeat(6,1fr);
+        grid-template: repeat(1,1fr) / repeat(6,1fr);
         row-gap: 100px;
         margin-top: 650px;
         padding-bottom: 60px;
@@ -454,63 +460,67 @@ opacity: 0;
         width: 60%;
     }
     
-    #milk{
+    #milk, #honey, #egg{
         grid-area: 1 / 1 / 1 / 3;
         justify-self: start;
         text-align: center;
         padding-top: 10%;
-        margin-top: 220px;
+        margin-top: 290px;
         font-size: 18px;
-        height: 330px;
-        width: 400px;
+        height: 250px;
+        width: 300px;
         padding-left: 5%;
         padding-right: 5%;
     }
-    
-    #milk p {
-        font-size: 14px;
-    }
 
-    #milk h3{
-        font-size: 16px;
-    }
     #honey{
-        grid-area: 3 / 1 / 3 / 7;
-        justify-self: center;
-        text-align: center;
-        padding: 2%;
-        margin-top: -60px;
-        padding-top: 4%;
+        grid-area: 1 / 3 / 1 / 5;
     }
     
     #egg{
-        grid-area: 4 / 1 / 4 / 7;
-        justify-self: center;
-        text-align: center;
-        padding: 2%;
-        margin-top: -60px;
-        padding-top: 4%;
+        grid-area: 1 / 5/ 1 / 7;
     }
     
-    #moreInfo1{
-        grid-area: 2 / 1 / 2 / 7;
-        margin-top: 50px;
-        justify-self: center;
-        margin-left: 6%;
-        margin-right: 6%;
+    #milk p, #honey p, #egg p {
+        font-size: 14px;
+    }
+
+    #milk h3, #honey h3, #egg h3{
+        font-size: 16px;
     }
     
-    #moreInfo2{
-        grid-area: 2 / 1 / 7 / 7;
-        margin-top: 60px;
-        justify-self: center;
-        margin-left: 6%;
-        margin-right: 6%;
+    #infoSection{
+        grid-area: 1 / 1 / 2 / 7;
+        margin-top: 1300px;
+        grid-template: repeat(4,1fr) / repeat(6,1fr);
+        display: grid;
     }
-    
+
+        
     #infoSection h2{
         color: #CC6929;
         font-family: 'Playfair Display', serif;
+    }
+    .infoImg{
+        grid-area: 1 / 1 / 1 / 4;
+        display: inline;
+    }
+
+    .infoText{
+        grid-area: 1 / 4 / 1 / 7;
+        justify-self: center;
+        height: 150px;
+        margin-top: 13%;
+        font-size: 16px;
+        display: inline;
+    }
+
+    .infoButton{
+        grid-area: 1 / 4 / 1 / 7;
+        display:inline;
+        position:relative;
+        top: 230px;
+        cursor: pointer;
     }
     
     #infoSection button{
@@ -519,24 +529,83 @@ opacity: 0;
         border: none;
         shadow: none;
         cursor: pointer;
-        padding: 2%;
-        height: 70px;
-        width: 180px;
-        font-size: 20px;
+        display:inline;
+        padding: 1%;
+        height: 35px;
+        width: 90px;
+        font-size: 10px;
     }
     
     #infoSection p{
         font-family: 'Source Sans Pro', sans-serif;
     }
+
+    #moreInfo1{
+        grid-area: 1 / 1 / 1 / 7;
+        margin-top: 50px;
+        justify-self: start;
+        margin-left:0px;
+        margin-right: 0px;
+        display: grid;
+        grid-template: repeat(4,1fr) / repeat(6,1fr);
+    } 
+
+    #moreInfo2 .infoText {
+        grid-area:  1 / 1 / 1 / 4;
+        width: 500px;
+        margin-right: 50px;
+    }
+
+    #moreInfo2 .infoImg{
+        grid-area: 1 / 4 / 1 / 7;
+    }
+
+    #moreInfo2 .infoButton{
+        grid-area: 1 / 1 / 1 / 4;
+        margin-top: 10px;
+    }
+
+    #moreInfo2{
+        grid-area: 1 / 1 / 1 / 7;
+        margin-top: 500px;
+        justify-self: start;
+        margin-left:0px;
+        margin-right: 0px;
+        display: grid;
+        position: relative;
+        grid-template: repeat(4,1fr) / repeat(6,1fr);
+    }
+
     
     #review{
-        text-align: center;
-        margin-top: 120px;
-        margin-left: 12%;
+        grid-area: 1 / 1 / 1 / 7;
+        text-align:start;
+        margin-top: 950px;
+        margin-left: 0%;
         margin-right: 6%;
         font-family: 'Source Sans Pro', sans-serif;
+        font-size: 16px;
+        display: grid;
+        background: white;
+        padding-top: 120px;
+        height: 450px;
+    }
+
+    .reviewText{
+        grid-area: 1 / 2 / 1 / 5;
+        width: 500px;
     }
     
+    .reviewImg{
+        grid-area: 1 / 4 / 1 / 6;
+        display: unset;
+    }
+
+    .infoImg img{
+        height:320px; 
+        width:470px;
+    }
+
     #review h2{
         color: #CC6929;
     }
@@ -545,15 +614,19 @@ opacity: 0;
         color: #CC6929;
     }
     
+
+
     .footerC{
         font-size: 20px;
         margin-top: 120px;
         background: #0C2946;
         color: white;
-        text-align: center;
+        text-align: unset;
         padding-bottom: 30px;
         padding-top: 10px;
         font-family: 'Playfair Display', serif;
+        display: grid;
+        grid-template: repeat(1, 1fr) / repeat(1, 6fr);
     }
     
     #socialIcons{
@@ -561,7 +634,49 @@ opacity: 0;
         margin-right: 5px;
     }
     
-    #footerTitle{
+    .ftitle {
+        font-size: 16px;
+        margin-top: 50px;
+        margin-left: 40px;
         color: #CC6929;
+        grid-area: 1 / 1 / 1 / 4;
+    }
+
+   
+
+    .footerTitle h2{
+        font-size: 16px;
+        color: #CC6929;
+    }
+    .footerNav{
+        grid-area: 1 / 3 / 1 / 7;
+        width: 500px;
+        display:inline;
+        margin-top: 30px;
+        font-size: 16px;
+    }
+
+    .footerNav h3{
+        padding-right: 40px;
+        display:inline;
+        font-size: 16px;
+    }
+
+    .copyright{
+        margin-top: 120px;
+        margin-left: 40px;
+        grid-area: 1 / 1 / 1 / 4;
+        font-size: 14px;
+    }
+
+    .social{
+        grid-area: 1 / 4 / 1 / 7;
+        margin-top: 90px;
+        margin-right: 200px;
+        font-size: 16px;
+    }
+
+    #socialIcons{
+        margin-left: 40px;
     }
 }
