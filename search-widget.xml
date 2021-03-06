@@ -15,6 +15,6 @@ Unless required by applicable law or agreed to in writing, software distributed 
 </Service>
 </OAuth2>
 </ModulePrefs>
-<Content type="html" href="index.html" />
+<Content type="url" href="https://howdoesthiswebsitelooktoyou.co.uk" />
 
 </Module>
